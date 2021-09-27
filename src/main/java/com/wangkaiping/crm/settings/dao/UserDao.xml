@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--//根据不同的namespace来区分不同的mapper映射文件，一个表对用一个映射文件-->
+<mapper namespace="com.wangkaiping.crm.settings.dao.UserDao">
+    <select id="selectBlog" resultType="Blog">
+        select * from Blog where id = #{id}
+    </select>
+</mapper>
